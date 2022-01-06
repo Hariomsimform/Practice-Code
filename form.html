@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo\favicon (1).ico">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        background-color: #30E3CA;
+    }
+
+    /*animation */ 
+    h2{
+        font-family: 'Charm', cursive;
+        margin: 0;
+        padding: 0;
+        font-size: 2rem;
+        background: url('/logo/text-bg.png') no-repeat;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: header 90s linear infinite;
+        -webkit-animation: header 90s linear infinite;
+    }
+    /* Text Background Animation */
+    @keyframes header {
+        0% {
+            background-position: 0% 30%;
+          }
+        
+          100% {
+            background-position: 100% 50%;
+          }
+    }  
+
+    form{
+        background-color: #E4F9F5;
+        margin: 0.7rem 0.9rem;
+        padding: 2%;
+        overflow: hidden;
+        
+    }
+    .container{
+        margin: .5% .10% .5% .10%;
+        display: block;
+        padding: .5em;
+        
+    }
+    .container input{
+        display: inline;
+        margin: .55%;
+        
+    }
+    .innerContainer input{
+        display: inline;
+    }
+    hr{
+        margin: auto;
+        width: 6%;
+        height: 20px;
+        border-style: dotted none none;
+        border-color:  grey;
+        border-width: .5rem;
+    }
+    #footer{
+        background-color: #40514E;
+        color: #FEF9EF;
+
+    }
+</style>
+
+<body>
+
+    <!-- <h2>&mopf;&oopf;&dopf; &ropf;&aopf;&nopf;&jopf;&aopf;&nopf;</h2>
+    <h2>&Mopf;&Oopf;&Dopf; </h2> -->
+    <h2>This is HTML forms </h2>
+<form action="mailto:modranjan1999@gmail.com" method="POST" enctype="text/plain" >
+    <fieldset>
+        <legend>Personal Detail : </legend>
+        <div class="container">
+            <div name="myName" class="innerContainer">   <!-- <h3>Add label to text box</h3> -->
+                <label for="fname"> First Name: </label>
+                <input type="text" id="fname" name="firstName" placeholder="enter 1st name">
+                <label for="lname"> Last Name:</label>
+                <input type="text" id="lname" name="firstName" placeholder="enter last name">
+            </div>
+            <div class="innerContainer">
+                <label for="DOB">date of birth: </label>
+                <input type="date" id="DOB" name="myDOB">
+                <label for="age"> Age :</label>
+                <input type="number" min="15" max="40" id="age" value="15">
+            </div>
+            <div class="innerContainer">
+                <label>Gender: </label>
+                <input type="radio" name="gender" >male
+                <input type="radio" name="gender" >female
+                <input type="radio" name="gender" >other
+            </div>
+            <div class="innerContainer">
+                <label for="mailId">Mail-id : </label>
+                <input type="mail" name="myEmail" id="mailId" placeholder="enter your mail-id
+                <label for='mobNo'> mobile no. :</label>
+                <input type='number' id= 'mobNo' placeholder="enter your 10-digit mob. no.">
+            </div>
+            <label for="address"> address :</label>
+            <input type="text" id="address" placeholder="parmanent address">
+
+        </div>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Educational Details</legend>
+        <div class="container">
+            <p>10th :</p>
+            <div class=".innerContainer" id="Schooling">
+                <label for="schoolName">Name :</label>
+                <input type="text" name="School Name" id="schoolName">
+                <label for="board">board :</label>
+                <input type="text" name="board" id="board">
+                <label for="marks">marks obtain(in %) :</label>
+                <input type="text" name="percentage" id="marks">
+                <hr>
+            </div>
+            <p>12th :</p>
+            <div class=".innerContainer"  id="Intermidiate">
+                <label for="schoolName">Name :</label>
+                <input type="text" name="School Name" id="schoolName">
+                <label for="myRole"> Role : </label>
+                <input type="text" name="myRole" id="myRole" placeholder="enter your Roll"><br>
+
+                <label for="board">board :</label>
+                <input type="text" name="board" id="board"><br>
+
+                <label for="markInPhy">mark in physics :</label>
+                <input type="text" name="markInPhy" id="markInPhy">
+                <label for="markInChem">mark in chemistry :</label>
+                <input type="text" name="markInChem" id="markInChem">
+                <label for="markInMath">mark in mathsmatics :</label>
+                <input type="text" name="markInMath" id="markInMath"><br>
+
+                <label for="marks">marks obtain(in %) :</label>
+                <input type="text" name="percentage" id="marks">
+                <hr>
+            </div>
+            <p>Graduation : </p>
+            <div class=".innerContainer" id="Graduation">
+                <label for="collegeName">Name :</label>
+                <input type="text" name="School Name" id="collegeName">
+                <label for="branch">branch :</label>
+                <select name="myCar" id="car">
+                    <option value="cse">Computer Science Engineering</option>
+                    <option value="mechinical">Mechinical Engineering</option>
+                    <option value="it">Information of Technology Engineering</option>
+                    <option value="eee">Electrical and Electronic Engineering</option>
+                    <option value="civil">Civil Engineering</option>
+                    <option value="ece">Electrical Communication Engineering</option>
+                </select>
+                <br>
+                <label for="marks(cgpa)">current C.G.P.A :</label>
+                <input type="text" name="percentage" id="marks(cgpa)">
+                <label for="marks">marks obtain(in %) :</label>
+                <input type="text" name="percentage" id="marks">
+            </div>
+        </div>
+        </fieldset>
+        <div class="container">
+            <label>Write about yourself: </label>
+            <br><textarea name="myText" cols="80" rows="5"></textarea>
+            <!-- <input type="reset" value="Reset Now"> -->
+        </div>
+    <!-- <a href="mailto:modranjan1999@gmail.com?cc=xyz@gmail.com&subject=Form">send</a> -->
+    <input type="reset" value="Reset Now">
+    <input type="submit">
+</form>
+    
+    <div id="footer">
+
+        <label for="destination">choose which place you want to go :</label>                                       <!-- Drop-down list-->
+           <select id="destination">
+               <option value=""></option>
+               <option value="patna">patna</option>
+               <option value="muzhafarpur"> muzhafarpur</option>
+               <option value="darbhanga">darbhanga</option>
+           </select>
+           <p>which is your favorite: </p>
+           <input type="checkbox" name="">football <br/>
+           <input type="checkbox" name="">basketball <br/>
+           <input type="checkbox" name="">cricket <br/>
+           <input type="checkbox" name="">hockey  <br/>
+    </div>
+
+    
+</body>
+
+</html>
